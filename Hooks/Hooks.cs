@@ -46,6 +46,7 @@ namespace AllureReportSample.Hooks
                 //Logger.Info("Webdriver Initializatuion, Chrome");
                 driver = new ChromeDriver();
                 objectContainer.RegisterInstanceAs(driver);
+                _specFlowOutputHelper.WriteLine("Webdriver Initializatuion, Chrome ");
                 //driver.Navigate().GoToUrl("https://wikipedia.com");
             }
         }
